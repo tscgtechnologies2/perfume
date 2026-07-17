@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gold-rim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3e5ab" />
+      <stop offset="50%" stop-color="#d4af37" />
+      <stop offset="100%" stop-color="#a8821a" />
+    </linearGradient>
+    <radialGradient id="plum-glow" cx="30%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="rgba(94, 48, 70, 0.35)" />
+      <stop offset="60%" stop-color="rgba(20, 18, 25, 0.95)" />
+      <stop offset="100%" stop-color="#08080a" />
+    </radialGradient>
+  </defs>
+  <rect width="400" height="480" fill="url(#plum-glow)" />
+  
+  <!-- Geometric Packaging & Crystal Shard Background Geometry -->
+  <polygon points="60,80 180,40 140,160" fill="none" stroke="rgba(212, 175, 55, 0.15)" stroke-width="1" />
+  <polygon points="320,120 380,240 280,220" fill="none" stroke="rgba(212, 175, 55, 0.2)" stroke-width="1.2" />
+  <circle cx="340" cy="100" r="30" fill="none" stroke="rgba(243, 229, 171, 0.15)" stroke-width="1" />
+
+  <!-- Female Designer Sleek Chignon Profile Silhouette -->
+  <path d="M 90 480 L 90 390 C 90 350 115 330 150 320 L 165 315 C 150 285 145 250 145 200 C 145 130 175 90 220 90 C 265 90 295 130 295 200 C 295 250 290 285 275 315 L 290 320 C 325 330 350 350 350 390 L 350 480 Z" fill="#141218" stroke="url(#gold-rim)" stroke-width="1.8" />
+  
+  <!-- Sleek Hair Chignon Silhouette -->
+  <circle cx="210" cy="78" r="36" fill="#141218" stroke="url(#gold-rim)" stroke-width="1.5" />
+  <path d="M 180 88 C 200 65 230 65 248 88" fill="none" stroke="#f3e5ab" stroke-width="1.2" opacity="0.7" />
+  
+  <!-- Gold Geometric Earring -->
+  <circle cx="265" cy="220" r="14" fill="none" stroke="#d4af37" stroke-width="2.5" />
+  <line x1="265" y1="206" x2="265" y2="195" stroke="#d4af37" stroke-width="2" />
+  
+  <!-- High Fashion Neckline -->
+  <path d="M 150 320 Q 220 365 290 320" fill="none" stroke="url(#gold-rim)" stroke-width="1.5" opacity="0.8" />
+</svg>

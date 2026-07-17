@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfume / Fragrance Brand — Haute Parfumerie &amp; Luxury Atelier</title>
+  <meta name="description" content="Perfume / Fragrance Brand creates elevated luxury scents designed to feel timeless, intimate, and beautifully layered. Composed like wearable art." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ================= TOP ANNOUNCEMENT BAR ================= -->
+  <div class="announcement-bar">
+    <span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#d4af37" stroke-width="2"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+      Complimentary Bespoke Packaging &amp; Express Shipping on All Orders Over $150 · <a href="#collections">Explore The Winter Atelier</a>
+    </span>
+  </div>
+
+  <!-- ================= STICKY LUXURY NAVIGATION ================= -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <a href="#hero" class="brand-logo">
+        <span class="logo-main">Perfume / Fragrance Brand</span>
+        <span class="logo-sub">HAUTE PARFUMERIE</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#collections">Collections</a></li>
+          <li><a href="#why-choose">Craft &amp; Notes</a></li>
+          <li><a href="#how-it-works">Journey</a></li>
+          <li><a href="#memberships">Rituals</a></li>
+          <li><a href="#journal">Journal</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-icon" id="open-quiz-nav" title="Scent Consultation">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+          <span style="font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase;">Consult</span>
+        </button>
+        <button class="btn-icon" id="cart-btn" title="Atelier Bag">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="badge" id="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MOBILE DRAWER ================= -->
+  <aside class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-subtle); padding-bottom: 1.5rem;">
+      <span class="font-display text-gold" style="font-size: 1.1rem;">Perfume / Fragrance Brand</span>
+      <button class="modal-close" id="close-mobile-drawer" aria-label="Close Mobile Menu">&times;</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="#about" class="mobile-link">About the Atelier</a></li>
+      <li><a href="#collections" class="mobile-link">Fragrance Collections</a></li>
+      <li><a href="#why-choose" class="mobile-link">Why Choose Us</a></li>
+      <li><a href="#how-it-works" class="mobile-link">The Customer Journey</a></li>
+      <li><a href="#memberships" class="mobile-link">Memberships &amp; Rituals</a></li>
+      <li><a href="#testimonials" class="mobile-link">Patron Testimonials</a></li>
+      <li><a href="#faq" class="mobile-link">Frequently Asked Questions</a></li>
+      <li><a href="#team" class="mobile-link">Our Artisans</a></li>
+      <li><a href="#journal" class="mobile-link">Journal &amp; Insights</a></li>
+      <li><a href="#contact" class="mobile-link">Scent Consultation</a></li>
+    </ul>
+    <div style="margin-top: auto; padding-top: 2rem; border-top: 1px solid var(--border-light);">
+      <p style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 1rem;">Begin your private fragrance dialogue today.</p>
+      <a href="#contact" class="btn btn-primary mobile-link" style="width: 100%; text-align: center;">Begin Consultation</a>
+    </div>
+  </aside>
+
+  <!-- ================= SECTION 1: HERO ================= -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-wrapper">
+      <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=2000&q=85" 
+           onerror="this.onerror=null;this.src='assets/bottle-silhouette.svg';" 
+           alt="Cinematic luxury perfume bottle in dark amber lighting" class="hero-bg-img" id="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <canvas id="hero-particles"></canvas>
+
+    <div class="hero-content">
+      <span class="hero-eyebrow">Haute Parfumerie &amp; Artistic Composition</span>
+      <h1 class="hero-title">Scent, Composed Like Art</h1>
+      <p class="hero-subtitle">
+        A luxury fragrance experience shaped by mood, memory, and modern elegance. Housed in weighted crystal and crafted from the rare essences of the world.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#collections" class="btn btn-primary">Shop the Collection</a>
+        <button type="button" class="btn btn-secondary" id="open-quiz-hero">Discover Your Scent</button>
+      </div>
+
+      <div class="scent-families-selector" aria-label="Explore Scent Families">
+        <span style="font-size: 0.7rem; color: var(--text-muted); letter-spacing: 0.15em; text-transform: uppercase; align-self: center; margin-right: 8px;">Explore Family:</span>
+        <button class="scent-family-pill active" data-family="all">All Compositions</button>
+        <button class="scent-family-pill" data-family="woody">Woody Amber</button>
+        <button class="scent-family-pill" data-family="floral">Sensual Iris</button>
+        <button class="scent-family-pill" data-family="smoky">Smoky Plum</button>
+        <button class="scent-family-pill" data-family="leather">Golden Leather</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 2: ABOUT ================= -->
+  <section class="about-section reveal" id="about">
+    <div class="about-grid">
+      <div class="about-text">
+        <div class="section-tag">The Philosophy</div>
+        <h2 class="section-title">The Architecture of Emotion</h2>
+        
+        <blockquote class="about-quote">
+          “Perfume / Fragrance Brand is built around composition, character, and emotional presence. Each fragrance is imagined as a lasting impression — refined, modern, and deeply memorable.”
+        </blockquote>
+
+        <div class="about-body">
+          <p>
+            Founded on the conviction that scent is our most visceral link to memory and identity, our private house formulates without compromise. We balance classical French olfactory discipline with avant-garde minimalism, ensuring every top note sparkles with clarity before settling into a warm, intoxicating skin-scent dry down.
+          </p>
+          <p>
+            We do not follow fleeting trends or synthetic intensity. Every crystal vessel born in our atelier undergoes months of aging and maturation, allowing rare botanical absolutes to harmonize with bespoke modern accords.
+          </p>
+        </div>
+
+        <div style="margin-top: 2.5rem; display: flex; gap: 2rem; align-items: center;">
+          <a href="#collections" class="btn-link">Explore the Manifesto &rarr;</a>
+          <span style="height: 20px; width: 1px; background: var(--border-gold);"></span>
+          <span class="font-italic text-gold" style="font-size: 1.1rem; font-family: var(--font-serif);">Crafted in Limited Harvests</span>
+        </div>
+      </div>
+
+      <div class="about-visual-group">
+        <div class="about-badge">
+          <span class="badge-year">MMXVIII</span>
+          <span class="badge-text">Atelier Foundation</span>
+        </div>
+        
+        <img src="https://images.unsplash.com/photo-1615397349754-cfa2066a298e?auto=format&fit=crop&w=900&q=85" 
+             onerror="this.onerror=null;this.src='assets/botanical-notes.svg';" 
+             alt="Master perfumer atelier with glowing crystal flacons" class="about-img-main" />
+             
+        <img src="assets/atelier-seal.svg" alt="Perfume / Fragrance Brand crest and seal" class="about-img-accent" style="background: var(--bg-obsidian); padding: 10px;" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 3: COLLECTIONS / SERVICES / OFFERINGS ================= -->
+  <section class="collections-section reveal" id="collections">
+    <div class="section-header">
+      <div class="section-tag">Curated Offerings</div>
+      <h2 class="section-title">Olfactory Collections &amp; Services</h2>
+      <p class="section-subtitle">
+        Discover our signature Eau de Parfum creations, concentrated Extrait extracts, sensory discovery coffrets, and bespoke layering rituals.
+      </p>
+    </div>
+
+    <div class="collections-tabs">
+      <button class="tab-btn active" data-target="all">All Offerings</button>
+      <button class="tab-btn" data-target="edp">Eau de Parfum</button>
+      <button class="tab-btn" data-target="extrait">Extrait de Parfum</button>
+      <button class="tab-btn" data-target="discovery">Discovery Sets</button>
+      <button class="tab-btn" data-target="seasonal">Seasonal Editions</button>
+      <button class="tab-btn" data-target="gifts">Gift Sets</button>
+      <button class="tab-btn" data-target="layering">Layering Essentials</button>
+    </div>
+
+    <div class="collections-grid" id="collections-grid">
+      <!-- Card 1: L'Ombre d'Or -->
+      <div class="scent-card" data-category="extrait">
+        <div class="scent-card-img-wrapper">
+          <span class="scent-card-tag">Extrait de Parfum</span>
+          <img src="https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&w=800&q=85" 
+               onerror="this.onerror=null;this.src='assets/bottle-silhouette.svg';" 
+               alt="No. 01 L'Ombre d'Or crystal bottle" class="scent-card-img" />
+          <button class="scent-quick-view" data-title="No. 01 — L'Ombre d'Or" data-desc="A hypnotic, sensual composition anchored by rare golden amber and smoked vetiver. Opens with crushed cardamom and Italian bergamot before evolving into dark iris." data-price="$285" data-concentration="Extrait de Parfum · 100ml / 3.4 fl. oz.">Quick View</button>
+        </div>
+        <div class="scent-card-body">
+          <h3 class="scent-card-title">No. 01 — L'Ombre d'Or</h3>
+          <p class="scent-card-desc">Hypnotic golden amber, Italian bergamot, and smoked vetiver in weighted black crystal.</p>
+          
+          <div class="scent-pyramid">
+            <div class="scent-pyramid-item"><span class="scent-pyramid-label">Top</span><span class="scent-pyramid-value">Bergamot &amp; Crushed Cardamom</span></div>
+            <div class="scent-pyramid-item"><span class="scent-pyramid-label">Heart</span><span class="scent-pyramid-value">Florentine Iris &amp; Amber crystals</span></div>
+            <div class="scent-pyramid-item"><span class="scent-pyramid-label">Base</span><span class="scent-pyramid-value">Smoked Vetiver &amp; Labdanum</span></div>
+          </div>
+
+          <div class="scent-card-footer">
+            <div class="scent-price">$285 <span>/ 100ml Extrait</span></div>
+            <button class="btn btn-secondary add-to-cart-btn" data-item="No. 01 — L'Ombre d'Or" style="padding: 10px 20px; font-size: 0.72rem;">Add to Ritual</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Noir Velours -->
+      <div class="scent-card" data-category="edp">
+        <div class="scent-card-img-wrapper">
+          <span class="scent-card-tag">Eau de Parfum</span>
+          <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=85" 
+               onerror="this.onerror=null;this.src='assets/card-edp-velours.svg';" 
+               alt="No. 02 Noir Velours perfume" class="scent-card-img" />
+          <button class="scent-quick-view" data-title="No. 02 — Noir Velours" data-desc="Velvety dark plum petals enveloped in smoky Bourbon vanilla and charred cedar bark. Designed for intimate evenings and confident allure." data-price="$220" data-concentration="Eau de Parfum · 100ml / 3.4 fl. oz.">Quick View</button>
+        </div>
+        <div class="scent-card-body">
+          <h3 class="scent-card-title">No. 02 — Noir Velours</h3>
+          <p class="scent-card-desc">Velvety dark plum petals enveloped in Bourbon vanilla absolute and charred cedar.</p>
+          
+          <div class="scent-pyramid">
+            <div class="scent-pyramid-item"><span class="scent-pyramid-label">Top</span><span class="scent-pyramid-value">Dark Plum &amp; Black Pepper</span></div>
+            <div class="scent-pyramid-item"><span class="scent-pyramid-label">Heart</span><span class="scent-pyramid-value">Night-Blooming Jasmine</span></div>
+            <div class="scent-pyramid-item"><span class="scent-pyramid-label">Base</span><span class="scent-pyramid-value">Bourbon Vanilla &amp; Cedarwood</span></div>
+          </div>
+
+          <div class="scent-card-footer">
+            <div class="scent-price">$220 <span>/ 100ml EDP</span></div>
+            <button class="btn btn-secondary add-to-cart-btn" data-item="No. 02 — Noir Velours" style="padding: 10px 20px; font-size: 0.72rem;">Add to Ritual</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Iris Céleste -->
+      <div class="scent-card" data-category="edp">
+        <div class="scent-card-img-wrapper">
+          <span class="scent-card-tag">Eau de Parfum</span>
+          <img src="https://images.unsplash.com/photo-1588405765081-6f4be38883cd?auto=format&fit=crop&w=800&q=85" 
+               onerror="this.onerror=null;this.src='assets/card-edp-iris.svg';" 
+               alt="No. 03 Iris Céleste bottle" class="scent-card-img" />
+          <button class="scent-quick-view" data-title="No. 03 — Iris Céleste" data-desc="An ethereal floral composition celebrating buttery orris root, violet leaf, and warm cashmeran. Crisp, luminous, and endlessly sophisticated." data-price="$240" data-concentration="Eau de Parfum · 100ml / 3.4 fl. oz.">Quick View</button>
+        </div>
+        <div class="scent-card-body">
+          <h3 class="scent-card-title">No. 03 — Iris Céleste</h3>
+          <p class="scent-card-desc">Ethereal buttery orris root, violet leaf, and warm cashmeran for luminous elegance.</p>
+          
+          <div class="scent-pyramid">
+            <div class="scent-pyramid-item"><span class="scent-pyramid-label">Top</span><span class="scent-pyramid-value">Violet Leaf &amp; Pear Nectar</span></div>
+            <div class="scent-pyramid-item"><span class="scent-pyramid-label">Heart</span><span class="scent-pyramid-value">Orris Butter &amp; Heliotrope</span></div>
+            <div class="scent-pyramid-item"><span class="scent-pyramid-label">Base</span><span class="scent-pyramid-value">Cashmeran &amp; White Amber</span></div>
+          </div>
+
+          <div class="scent-card-footer">
+            <div class="scent-price">$240 <span>/ 100ml EDP</span></div>
+            <button class="btn btn-secondary add-to-cart-btn" data-item="No. 03 — Iris Céleste" style="padding: 10px 20px; font-size: 0.72rem;">Add to Ritual</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4: The Discovery Box -->
+      <div class="scent-card" data-category="discovery">
+        <div class="scent-card-img-wrapper">
+          <span class="scent-card-tag">Discovery Set</span>
+          <img src="assets/discovery-vials.svg" alt="Five miniature bespoke perfume vials" class="scent-card-img" style="object-fit: contain; padding: 20px;" />
+          <button class="scent-quick-view" data-title="The Atelier Discovery Set" data-desc="Our curated quintet of signature extraits and eaux de parfum, housed in miniature 5ml crystal vials inside a wax-sealed velvet coffret. Includes a $65 credit toward any full-size vessel." data-price="$65" data-concentration="Discovery Set · 5 x 5ml Miniature Vials">Quick View</button>
+        </div>
+        <div class="scent-card-body">
+          <h3 class="scent-card-title">The Discovery Set</h3>
+          <p class="scent-card-desc">Five bespoke 5ml crystal vials representing our master olfactory wardrobe. Includes full-size credit.</p>
+          
+          <div class="scent-pyramid">
+            <div class="scent-pyramid-item"><span class="scent-pyramid-label">Includes</span><span class="scent-pyramid-value">No. 01, No. 02, No. 03, No. 04, No. 05</span></div>
+            <div class="scent-pyramid-item"><span class="scent-pyramid-label">Presentation</span><span class="scent-pyramid-value">Plush Velvet &amp; Gold Foil Coffret</span></div>
+            <div class="scent-pyramid-item"><span class="scent-pyramid-label">Privilege</span><span class="scent-pyramid-value">$65 Voucher Toward Full Flacon</span></div>
+          </div>
+
+          <div class="scent-card-footer">
+            <div class="scent-price">$65 <span>/ 5 x 5ml Coffret</span></div>
+            <button class="btn btn-secondary add-to-cart-btn" data-item="The Atelier Discovery Set" style="padding: 10px 20px; font-size: 0.72rem;">Add to Ritual</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5: Ambre Santal (Seasonal) -->
+      <div class="scent-card" data-category="seasonal">
+        <div class="scent-card-img-wrapper">
+          <span class="scent-card-tag">Seasonal Edition</span>
+          <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=800&q=85" 
+               onerror="this.onerror=null;this.src='assets/card-seasonal.svg';" 
+               alt="Ambre Santal seasonal perfume" class="scent-card-img" />
+          <button class="scent-quick-view" data-title="No. 04 — Ambre Santal" data-desc="A limited autumn/winter release celebrating sacred Mysore sandalwood, warm golden beeswax, and spicy pink peppercorn. Rich, deeply comforting, and artful." data-price="$265" data-concentration="Seasonal Extrait · 100ml / 3.4 fl. oz.">Quick View</button>
+        </div>
+        <div class="scent-card-body">
+          <h3 class="scent-card-title">No. 04 — Ambre Santal</h3>
+          <p class="scent-card-desc">Sacred Mysore sandalwood, golden beeswax, and pink peppercorn for winter evenings.</p>
+          
+          <div class="scent-pyramid">
+            <div class="scent-pyramid-item"><span class="scent-pyramid-label">Top</span><span class="scent-pyramid-value">Pink Peppercorn &amp; Mandarin Resin</span></div>
+            <div class="scent-pyramid-item"><span class="scent-pyramid-label">Heart</span><span class="scent-pyramid-value">Mysore Sandalwood &amp; Myrrh</span></div>
+            <div class="scent-pyramid-item"><span class="scent-pyramid-label">Base</span><span class="scent-pyramid-value">Golden Beeswax &amp; Benzoin</span></div>
+          </div>
+
+          <div class="scent-card-footer">
+            <div class="scent-price">$265 <span>/ 100ml Edition</span></div>
+            <button class="btn btn-secondary add-to-cart-btn" data-item="No. 04 — Ambre Santal" style="padding: 10px 20px; font-size: 0.72rem;">Add to Ritual</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6: Layering & Gift Coffret -->
+      <div class="scent-card" data-category="gifts layering">
+        <div class="scent-card-img-wrapper">
+          <span class="scent-card-tag">Gift Set &amp; Layering</span>
+          <img src="assets/card-coffret.svg" alt="Layering and Gift Coffret presentation" class="scent-card-img" style="object-fit: cover;" />
+          <button class="scent-quick-view" data-title="Le Coffret Impérial — Bespoke Gift & Layering Set" data-desc="Our ultimate connoisseur experience. Features one 100ml signature extrait of your choice accompanied by two 30ml layering elixirs (Pure Amber and Smoked Iris) to customize your olfactory aura." data-price="$420" data-concentration="Bespoke Gift Coffret · 100ml + 2 x 30ml">Quick View</button>
+        </div>
+        <div class="scent-card-body">
+          <h3 class="scent-card-title">Le Coffret Impérial</h3>
+          <p class="scent-card-desc">One 100ml signature extrait accompanied by two 30ml layering elixirs in customized wood &amp; velvet coffret.</p>
+          
+          <div class="scent-pyramid">
+            <div class="scent-pyramid-item"><span class="scent-pyramid-label">Vessel 1</span><span class="scent-pyramid-value">100ml Extrait (Your Selection)</span></div>
+            <div class="scent-pyramid-item"><span class="scent-pyramid-label">Elixir A</span><span class="scent-pyramid-value">30ml Pure Amber Layering Accord</span></div>
+            <div class="scent-pyramid-item"><span class="scent-pyramid-label">Elixir B</span><span class="scent-pyramid-value">30ml Smoked Iris Layering Accord</span></div>
+          </div>
+
+          <div class="scent-card-footer">
+            <div class="scent-price">$420 <span>/ Complete Coffret</span></div>
+            <button class="btn btn-secondary add-to-cart-btn" data-item="Le Coffret Impérial" style="padding: 10px 20px; font-size: 0.72rem;">Add to Ritual</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 4: WHY CHOOSE PERFUME / FRAGRANCE BRAND ================= -->
+  <section class="why-section reveal" id="why-choose">
+    <div class="why-grid">
+      <div class="why-img-box">
+        <img src="assets/why-choose-visual.svg" alt="High fashion editorial composition and crystal flacon" />
+        <div class="why-stats-panel">
+          <div class="stat-item">
+            <h4>100%</h4>
+            <p>Master Composed</p>
+          </div>
+          <div class="stat-item">
+            <h4>38+</h4>
+            <p>Rare Botanicals</p>
+          </div>
+          <div class="stat-item">
+            <h4>48-Hr</h4>
+            <p>Skin Longevity</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="why-text">
+        <div class="section-tag">Uncompromising Authority</div>
+        <h2 class="section-title">Why Connoisseurs Choose Perfume / Fragrance Brand</h2>
+        <p class="section-subtitle">
+          In an era of mass-produced commercial fragrances, we preserve the intimacy, artistry, and material richness of traditional haute parfumerie.
+        </p>
+
+        <div class="value-list">
+          <div class="value-item">
+            <div class="value-icon">&sect;</div>
+            <div class="value-content">
+              <h3>Refined Fragrance Composition</h3>
+              <p>Every formula is built with high concentrations of pure absolutes and botanical extracts, ensuring layered evolution rather than static linear intensity.</p>
+            </div>
+          </div>
+
+          <div class="value-item">
+            <div class="value-icon">&diams;</div>
+            <div class="value-content">
+              <h3>Artisanal Packaging &amp; Presentation</h3>
+              <p>Weighted French crystal glass, hand-buffed metallic gold caps, and wax-sealed boxes transform every daily spray into a meditative luxury ritual.</p>
+            </div>
+          </div>
+
+          <div class="value-item">
+            <div class="value-icon">&infin;</div>
+            <div class="value-content">
+              <h3>Modern, Memorable Scent Profiles</h3>
+              <p>We strip away artificial sharpness, balancing warm amber, smoky woods, and sensual floral accords to create signature scents that become unforgettable identity markers.</p>
+            </div>
+          </div>
+
+          <div class="value-item">
+            <div class="value-icon">&starf;</div>
+            <div class="value-content">
+              <h3>Exclusive &amp; Artistic Approach</h3>
+              <p>We limit production runs to maintain ingredient integrity and exclusivity. You are wearing a private composition, not a ubiquitous crowd-pleaser.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 5: HOW IT WORKS (THE JOURNEY) ================= -->
+  <section class="journey-section reveal" id="how-it-works">
+    <div class="section-header">
+      <div class="section-tag">The Customer Journey</div>
+      <h2 class="section-title">How Your Scent Story Unfolds</h2>
+      <p class="section-subtitle">
+        We invite you to experience our creations at your own rhythm, allowing each note to reveal its true character on your skin over hours and days.
+      </p>
+    </div>
+
+    <div class="journey-steps">
+      <!-- Step 1 -->
+      <div class="journey-card">
+        <div class="step-num">01</div>
+        <h3>Explore Scent Families</h3>
+        <p>Navigate our olfactory palette — whether you are drawn to smoky plums, golden ambers, or crisp Florentine iris.</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="journey-card">
+        <div class="step-num">02</div>
+        <h3>Choose a Discovery Set</h3>
+        <p>Acquire our 5-vial miniature coffret to sample the complete wardrobe in the intimacy and comfort of your private sanctuary.</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="journey-card">
+        <div class="step-num">03</div>
+        <h3>Experience Notes on Skin</h3>
+        <p>Observe how each composition interacts with your unique body chemistry, tracing the evolution from sparkling top notes to warm base.</p>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="journey-card">
+        <div class="step-num">04</div>
+        <h3>Select Your Composition</h3>
+        <p>Redeem your full-size discovery credit toward your chosen 100ml crystal vessel, tailored to your signature mood.</p>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="journey-card">
+        <div class="step-num">05</div>
+        <h3>Receive Curated Packaging</h3>
+        <p>Your bespoke order arrives in our signature wax-sealed coffret, complete with handwritten calligraphic notes and complimentary samples.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 6: MEMBERSHIPS / PACKAGES / PLANS ================= -->
+  <section class="plans-section reveal" id="memberships">
+    <div class="section-header">
+      <div class="section-tag">Exclusive Privileges</div>
+      <h2 class="section-title">Memberships &amp; Curated Ritual Plans</h2>
+      <p class="section-subtitle">
+        For those who treat fragrance as an evolving personal collection. Choose your ideal entryway into the private world of Perfume / Fragrance Brand.
+      </p>
+    </div>
+
+    <div class="plans-grid">
+      <!-- Plan 1 -->
+      <div class="plan-card">
+        <h3 class="plan-title">Discovery Set</h3>
+        <span class="plan-target">Ideal for First-Time Patrons</span>
+        <div class="plan-price">$65 <span>/ one-time</span></div>
+        <p class="plan-desc">An artful introduction to our complete repertoire, allowing thorough testing before committing to a full flacon.</p>
+        
+        <ul class="plan-features">
+          <li>5 x 5ml Miniature Crystal Vials</li>
+          <li>Full-color Olfactory Guidebook</li>
+          <li>$65 Credit toward any 100ml Bottle</li>
+          <li>Complimentary Express Shipping</li>
+        </ul>
+
+        <button class="btn btn-secondary add-to-cart-btn" data-item="Discovery Set Plan ($65)" style="width: 100%;">Acquire Discovery Set</button>
+      </div>
+
+      <!-- Plan 2 (Featured) -->
+      <div class="plan-card featured">
+        <span class="plan-badge">Most Coveted</span>
+        <h3 class="plan-title">Signature Ritual</h3>
+        <span class="plan-target">Ideal for Daily Connoisseurs</span>
+        <div class="plan-price">$185 <span>/ season</span></div>
+        <p class="plan-desc">A seasonal subscription ensuring your fragrance wardrobe shifts effortlessly with changing weather and atmospheric shifts.</p>
+        
+        <ul class="plan-features">
+          <li>Quarterly Seasonal 100ml Extrait Release</li>
+          <li>Bespoke Engraved Travel Atomizer (10ml)</li>
+          <li>Priority Access to Limited Archival Batches</li>
+          <li>Complimentary Engraving &amp; Monogramming</li>
+          <li>Private Atelier Concierge Line</li>
+        </ul>
+
+        <a href="#contact" class="btn btn-primary" style="width: 100%;">Request Scent Consultation</a>
+      </div>
+
+      <!-- Plan 3 -->
+      <div class="plan-card">
+        <h3 class="plan-title">Private Collection</h3>
+        <span class="plan-target">Ideal for Collectors &amp; Gifting</span>
+        <div class="plan-price">$340 <span>/ annual vault</span></div>
+        <p class="plan-desc">Full access to our private reserve and experimental small-batch creations alongside personal master perfumer guidance.</p>
+        
+        <ul class="plan-features">
+          <li>Two 100ml Signature Bottles per Year</li>
+          <li>Unreleased Vault &amp; Lab Formulation Samples</li>
+          <li>Private 1-on-1 Virtual Atelier Masterclass</li>
+          <li>Custom Monogrammed Wooden Display Coffret</li>
+          <li>VIP Invitations to Salon Exhibitions</li>
+        </ul>
+
+        <a href="#contact" class="btn btn-secondary" style="width: 100%;">Inquire About Membership</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 7: TESTIMONIALS ================= -->
+  <section class="testimonials-section reveal" id="testimonials">
+    <div class="section-header">
+      <div class="section-tag">Patron Impressions</div>
+      <h2 class="section-title">Whispers from Private Patrons</h2>
+      <p class="section-subtitle">
+        Read experiences shared by our discerning clients and collectors around the world.
+      </p>
+    </div>
+
+    <div class="testimonial-carousel-container" aria-live="polite">
+      <!-- Slide 1 -->
+      <div class="testimonial-slide active">
+        <div class="testimonial-stars">&starf; &starf; &starf; &starf; &starf;</div>
+        <p class="testimonial-quote">
+          “Every detail felt exquisite, from the heavy weighted crystal bottle to the lasting scent profile. L'Ombre d'Or has become my undeniable signature — it lingers like golden velvet for over twenty-four hours.”
+        </p>
+        <div class="testimonial-author">Patron No. 412 — Connoisseur</div>
+        <div class="testimonial-role">Private Client, Paris &amp; Geneva</div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="testimonial-slide">
+        <div class="testimonial-stars">&starf; &starf; &starf; &starf; &starf;</div>
+        <p class="testimonial-quote">
+          “The fragrance feels beautifully layered and modern, without being overpowering or cloying. You can sense the purity of the Florentine iris and cedar immediately upon contact with warm skin.”
+        </p>
+        <div class="testimonial-author">Patron No. 288 — Art Director</div>
+        <div class="testimonial-role">Private Client, New York</div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="testimonial-slide">
+        <div class="testimonial-stars">&starf; &starf; &starf; &starf; &starf;</div>
+        <p class="testimonial-quote">
+          “It has the kind of quiet, intoxicating elegance that draws compliments long after it’s worn. The Discovery Set process was a sensory revelation that transformed how I choose fragrance.”
+        </p>
+        <div class="testimonial-author">Patron No. 509 — Architect</div>
+        <div class="testimonial-role">Private Client, London &amp; Milan</div>
+      </div>
+
+      <!-- Controls -->
+      <div class="carousel-controls">
+        <button class="carousel-btn" id="prev-slide" aria-label="Previous Testimonial">&larr;</button>
+        <div class="carousel-dots" id="carousel-dots">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+        </div>
+        <button class="carousel-btn" id="next-slide" aria-label="Next Testimonial">&rarr;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 8: FAQ ================= -->
+  <section class="faq-section reveal" id="faq">
+    <div class="section-header">
+      <div class="section-tag">Atelier Knowledge</div>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-subtitle">
+        Everything you need to know regarding our compositions, concentration profiles, and bespoke delivery procedures.
+      </p>
+    </div>
+
+    <div class="faq-container" id="faq-accordion">
+      <!-- FAQ Item 1 -->
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>What types of fragrances do you offer?</span>
+          <span class="faq-toggle-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Perfume / Fragrance Brand specializes in high-concentration Eau de Parfum (20–25% pure perfume oils) and luxury Extrait de Parfum (30–40% pure oils). Our portfolio ranges across four distinct olfactory families: Woody Amber, Sensual Iris, Smoky Plum &amp; Leather, and Seasonal Botanical Editions.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Item 2 -->
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>How do I choose the right scent for my body chemistry?</span>
+          <span class="faq-toggle-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            We always recommend beginning with our <strong>Discovery Set</strong> or utilizing our interactive <strong>Scent Consultation Quiz</strong>. Fragrance interacts intimately with skin temperature, pH, and natural lipids. Testing our 5ml vials over a full day allows you to observe how top notes settle into the heart and warm base on your skin before choosing your full 100ml vessel.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Item 3 -->
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Are discovery sets available and is the cost credited?</span>
+          <span class="faq-toggle-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Yes. Our Discovery Box features five 5ml miniature crystal tubes in a velvet coffret for $65. Each purchase includes a unique, personalized voucher code worth $65 that can be applied directly toward any full-sized 100ml Eau de Parfum or Extrait within 60 days.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Item 4 -->
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>What is the difference between Eau de Parfum and Extrait de Parfum?</span>
+          <span class="faq-toggle-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <strong>Extrait de Parfum</strong> represents the highest, richest concentration in haute parfumerie (30–40% oil concentration), providing deep skin adhesion, intimate projection, and 24+ hours of longevity. <strong>Eau de Parfum</strong> (20–25% oil concentration) offers a brighter, more expansive initial projection with luminous trail and 12–16 hours of wear.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Item 5 -->
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Is gift packaging and bespoke monogramming included?</span>
+          <span class="faq-toggle-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Absolutely. Every Perfume / Fragrance Brand vessel is delivered in our signature heavy matte-black presentation box lined with velvet and sealed with gold wax. During checkout or via consultation inquiry, you may request complimentary initials monogramming on the metallic cap and a handwritten calligraphic gift card.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Item 6 -->
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>How do I place an order or schedule a private consultation?</span>
+          <span class="faq-toggle-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Orders can be placed securely directly through our Collections grid on this website. For bespoke consultations, private events, or seasonal subscription inquiries, simply submit your request via our Contact section below, and our Connoisseur Concierge will respond within 12 hours.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 9: TEAM ================= -->
+  <section class="team-section reveal" id="team">
+    <div class="section-header">
+      <div class="section-tag">Artisans &amp; Composers</div>
+      <h2 class="section-title">The Creative Minds of Our House</h2>
+      <p class="section-subtitle">
+        Dedicated to craftsmanship, sensory storytelling, and uncompromising aesthetic rigor.
+      </p>
+    </div>
+
+    <div class="team-grid">
+      <!-- Team Member 1 -->
+      <div class="team-card">
+        <div class="team-img-wrapper">
+          <img src="assets/team-elena.png" onerror="this.onerror=null;this.src='assets/team-henri.svg';" alt="Elena Rostova Founder & Creative Director portrait" class="team-img" />
+        </div>
+        <div class="team-info">
+          <h3 class="team-name">Elena Rostova</h3>
+          <div class="team-role">Founder &amp; Creative Director</div>
+          <p class="team-bio">Guiding the artistic identity of the house, blending classical high-fashion discipline with minimalist modern luxury.</p>
+        </div>
+      </div>
+
+      <!-- Team Member 2 -->
+      <div class="team-card">
+        <div class="team-img-wrapper">
+          <img src="assets/team-henri.svg" alt="Henri de Luc Master Fragrance Composer portrait" class="team-img" />
+        </div>
+        <div class="team-info">
+          <h3 class="team-name">Henri de Luc</h3>
+          <div class="team-role">Master Fragrance Composer</div>
+          <p class="team-bio">Trained in Grasse and Paris, formulating complex, multi-layered olfactory symphonies from sustainable absolutes.</p>
+        </div>
+      </div>
+
+      <!-- Team Member 3 -->
+      <div class="team-card">
+        <div class="team-img-wrapper">
+          <img src="assets/team-sofia.svg" alt="Sofia Chen Packaging & Experience Lead portrait" class="team-img" />
+        </div>
+        <div class="team-info">
+          <h3 class="team-name">Sofia Chen</h3>
+          <div class="team-role">Packaging &amp; Experience Lead</div>
+          <p class="team-bio">Designing the tactile weight of crystal flacons, custom atomizer mechanisms, and bespoke velvet coffrets.</p>
+        </div>
+      </div>
+
+      <!-- Team Member 4 -->
+      <div class="team-card">
+        <div class="team-img-wrapper">
+          <img src="assets/team-julian.svg" alt="Julian Thorne Botanical & Product Development Specialist portrait" class="team-img" />
+        </div>
+        <div class="team-info">
+          <h3 class="team-name">Julian Thorne</h3>
+          <div class="team-role">Product Development Specialist</div>
+          <p class="team-bio">Traveling to remote harvest cooperatives to source rare Mysore sandalwood, Florentine iris, and organic resins.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 10: JOURNAL / ARTICLES / INSIGHTS ================= -->
+  <section class="journal-section reveal" id="journal">
+    <div class="section-header">
+      <div class="section-tag">Editorial Insights</div>
+      <h2 class="section-title">The Journal of Scent &amp; Memory</h2>
+      <p class="section-subtitle">
+        Explore deep essays on olfactory composition, personal expression, and the art of wearing fragrance.
+      </p>
+    </div>
+
+    <div class="journal-grid">
+      <!-- Article 1 -->
+      <article class="journal-card">
+        <div class="journal-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&w=700&q=85" 
+               onerror="this.onerror=null;this.src='assets/bottle-silhouette.svg';" 
+               alt="How to Choose a Signature Scent" class="journal-img" />
+        </div>
+        <div class="journal-body">
+          <div class="journal-meta">
+            <span>Olfactory Guide</span>
+            <span>5 Min Read</span>
+          </div>
+          <h3 class="journal-title">How to Choose a Signature Scent That Evolves With You</h3>
+          <p class="journal-excerpt">Why your signature scent should be selected based on emotional resonance and skin dry-down rather than immediate top-note impressions.</p>
+          <a href="#contact" class="btn-link" style="margin-top: auto;">Read Full Essay &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Article 2 -->
+      <article class="journal-card">
+        <div class="journal-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=700&q=85" 
+               onerror="this.onerror=null;this.src='assets/card-edp-velours.svg';" 
+               alt="The Art of Layering Fragrances" class="journal-img" />
+        </div>
+        <div class="journal-body">
+          <div class="journal-meta">
+            <span>Atelier Technique</span>
+            <span>4 Min Read</span>
+          </div>
+          <h3 class="journal-title">The Art of Layering: Combining Woody Amber with Sensual Iris</h3>
+          <p class="journal-excerpt">Discover how layering two distinct extraits creates a customized third dimension that belongs exclusively to your presence.</p>
+          <a href="#contact" class="btn-link" style="margin-top: auto;">Read Full Essay &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Article 3 -->
+      <article class="journal-card">
+        <div class="journal-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1588405765081-6f4be38883cd?auto=format&fit=crop&w=700&q=85" 
+               onerror="this.onerror=null;this.src='assets/card-edp-iris.svg';" 
+               alt="Notes That Define a Modern Wardrobe" class="journal-img" />
+        </div>
+        <div class="journal-body">
+          <div class="journal-meta">
+            <span>Botanical Notes</span>
+            <span>6 Min Read</span>
+          </div>
+          <h3 class="journal-title">Notes That Define a Modern Fragrance Wardrobe</h3>
+          <p class="journal-excerpt">From Florentine orris root to smoked Bourbon vanilla — exploring the essential ingredients reshaping modern luxury perfumery.</p>
+          <a href="#contact" class="btn-link" style="margin-top: auto;">Read Full Essay &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Article 4 -->
+      <article class="journal-card">
+        <div class="journal-img-wrapper">
+          <img src="assets/why-choose-visual.svg" alt="Fragrance as Personal Expression" class="journal-img" />
+        </div>
+        <div class="journal-body">
+          <div class="journal-meta">
+            <span>Philosophy</span>
+            <span>7 Min Read</span>
+          </div>
+          <h3 class="journal-title">Fragrance as a Form of Personal Expression &amp; Memory</h3>
+          <p class="journal-excerpt">An exploration into olfactory psychology and how scent anchors our most treasured memories across time and space.</p>
+          <a href="#contact" class="btn-link" style="margin-top: auto;">Read Full Essay &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Article 5 -->
+      <article class="journal-card">
+        <div class="journal-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=700&q=85" 
+               onerror="this.onerror=null;this.src='assets/card-seasonal.svg';" 
+               alt="Seasonal Scent Profiles" class="journal-img" />
+        </div>
+        <div class="journal-body">
+          <div class="journal-meta">
+            <span>Seasonal Shifts</span>
+            <span>4 Min Read</span>
+          </div>
+          <h3 class="journal-title">Seasonal Scent Profiles: Transitioning into Autumn &amp; Winter</h3>
+          <p class="journal-excerpt">Adapting your olfactory aura for colder temperatures using richer resins, warm sandalwood, and golden beeswax.</p>
+          <a href="#contact" class="btn-link" style="margin-top: auto;">Read Full Essay &rarr;</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 11: CONTACT & CONSULTATION ================= -->
+  <section class="contact-section reveal" id="contact">
+    <div class="contact-grid">
+      <div class="contact-info-panel">
+        <div class="section-tag">Private Dialogue</div>
+        <h2 class="section-title" style="font-size: 2.6rem;">Begin Your Scent Journey</h2>
+        <p style="color: var(--text-cream); margin-bottom: 3rem;">
+          Whether seeking a signature personal formulation, bespoke gifting coffrets, or guidance on our collection, our Connoisseur Concierge is at your service.
+        </p>
+
+        <div class="contact-block">
+          <h4>Connoisseur Concierge</h4>
+          <p>concierge@perfume-fragrance-brand.atelier<br />Response within 12 business hours.</p>
+        </div>
+
+        <div class="contact-block">
+          <h4>Private Salon Appointments</h4>
+          <p>Available by appointment only at our private salons in Paris, London, and New York. Virtual video consultations with our master perfumer available upon request.</p>
+        </div>
+
+        <div class="contact-block">
+          <h4>Bespoke Monogramming &amp; Gifting</h4>
+          <p>For corporate gifting, wedding ateliers, or custom cap engraving, please specify your requirements in your message.</p>
+        </div>
+
+        <div style="margin-top: 3.5rem; border-top: 1px solid var(--border-light); padding-top: 2rem;">
+          <img src="assets/atelier-seal.svg" alt="Atelier Crest" style="width: 80px; opacity: 0.6;" />
+        </div>
+      </div>
+
+      <div class="form-card">
+        <h3 class="font-serif" style="font-size: 2rem; margin-bottom: 0.5rem;">Scent Consultation &amp; Inquiry</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 2.2rem;">Complete the details below for personalized recommendations.</p>
+
+        <form id="contact-form" onsubmit="return false;">
+          <div class="form-group">
+            <label class="form-label" for="contact-name">Full Name</label>
+            <input type="text" id="contact-name" class="form-input" placeholder="e.g. Elena de Valois" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contact-email">Email Address</label>
+            <input type="email" id="contact-email" class="form-input" placeholder="elena@private-atelier.com" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contact-interest">Scent Interest / Family</label>
+            <select id="contact-interest" class="form-select" required>
+              <option value="">Select your primary scent preference...</option>
+              <option value="woody">Woody Amber &amp; Smoked Vetiver</option>
+              <option value="iris">Sensual Orris Root &amp; Florentine Iris</option>
+              <option value="plum">Smoky Plum, Leather &amp; Black Pepper</option>
+              <option value="discovery">Discovery Set &amp; Complete Wardrobe</option>
+              <option value="bespoke">Bespoke Custom Layering Advice</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contact-occasion">Occasion or Mood</label>
+            <select id="contact-occasion" class="form-select" required>
+              <option value="signature">Everyday Signature Presence</option>
+              <option value="intimate">Evening, Intimate &amp; Sensual</option>
+              <option value="celebration">Special Celebration or Gala</option>
+              <option value="gifting">Curated Gift Coffret</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contact-message">Personal Notes or Questions</label>
+            <textarea id="contact-message" class="form-textarea" rows="4" placeholder="Share notes on your favorite botanical accords, memories, or specific requests..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Consultation Request</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 12: FOOTER ================= -->
+  <footer class="footer" id="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Perfume / Fragrance Brand</h3>
+        <p>
+          A luxury fragrance experience shaped by mood, memory, and modern elegance. Housed in weighted crystal flacons and composed from the finest botanical absolutes of the world.
+        </p>
+        <span class="font-italic text-gold" style="font-size: 1.05rem;">Scent, Composed Like Art.</span>
+      </div>
+
+      <div class="footer-col">
+        <h4>Collections</h4>
+        <ul class="footer-links">
+          <li><a href="#collections">Extrait de Parfum</a></li>
+          <li><a href="#collections">Eau de Parfum</a></li>
+          <li><a href="#collections">The Discovery Box</a></li>
+          <li><a href="#collections">Seasonal Editions</a></li>
+          <li><a href="#collections">Le Coffret Impérial</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Atelier &amp; Craft</h4>
+        <ul class="footer-links">
+          <li><a href="#about">Our Philosophy</a></li>
+          <li><a href="#why-choose">Ingredient Purity</a></li>
+          <li><a href="#how-it-works">The Customer Journey</a></li>
+          <li><a href="#team">Master Composers</a></li>
+          <li><a href="#journal">Editorial Journal</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Client Services</h4>
+        <ul class="footer-links">
+          <li><a href="#contact">Scent Consultation</a></li>
+          <li><a href="#memberships">Signature Rituals</a></li>
+          <li><a href="#faq">Frequently Asked Questions</a></li>
+          <li><a href="#contact">Bespoke Monogramming</a></li>
+          <li><a href="#contact">Concierge Inquiries</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>
+        &copy; 2026 <strong>Perfume / Fragrance Brand</strong>. All Rights Reserved. Crafted with Artistic Integrity &amp; Sensual Precision.
+      </div>
+      <div style="display: flex; gap: 2rem;">
+        <a href="#footer" style="color: var(--text-muted); text-decoration: none;">Privacy Policy</a>
+        <a href="#footer" style="color: var(--text-muted); text-decoration: none;">Terms of Service</a>
+        <a href="#footer" style="color: var(--text-muted); text-decoration: none;">Atelier Charter</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= INTERACTIVE QUICK VIEW MODAL ================= -->
+  <div class="modal-overlay" id="quick-view-modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="close-quick-view">&times;</button>
+      <div class="section-tag">Olfactory Profile</div>
+      <h2 id="modal-title" class="font-serif" style="font-size: 2.4rem; margin-bottom: 0.5rem;"></h2>
+      <p id="modal-concentration" style="color: var(--gold-metallic); font-family: var(--font-display); font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 1.5rem;"></p>
+      
+      <p id="modal-desc" style="color: var(--text-cream); font-size: 1.05rem; margin-bottom: 2rem; line-height: 1.7;"></p>
+      
+      <div style="background: rgba(8,8,10,0.6); border-left: 2px solid var(--gold-metallic); padding: 1.5rem; margin-bottom: 2.5rem;">
+        <h4 style="font-size: 1rem; color: var(--gold-metallic); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.1em;">Master Composer Notes</h4>
+        <p style="font-size: 0.9rem; color: var(--text-muted);">Crafted without artificial boosters. Formulated to mature on skin over 24 hours with velvety projection and intimate depth.</p>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-light); padding-top: 1.8rem;">
+        <div id="modal-price" class="font-serif" style="font-size: 2.2rem; color: var(--text-ivory); font-weight: 600;"></div>
+        <button class="btn btn-primary" id="modal-add-btn">Acquire for Your Ritual</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= INTERACTIVE SCENT QUIZ MODAL ================= -->
+  <div class="modal-overlay" id="quiz-modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="close-quiz">&times;</button>
+      <div class="section-tag">Scent Consultation Quiz</div>
+      <h2 class="font-serif" id="quiz-header" style="font-size: 2.2rem; margin-bottom: 1rem;">Discover Your Signature Aura</h2>
+      
+      <!-- Quiz Step 1 -->
+      <div class="quiz-step active" id="quiz-step-1">
+        <p style="color: var(--text-cream);">Question 1 of 3: What atmosphere or setting brings you the most serenity and confidence?</p>
+        <div class="quiz-options">
+          <button class="quiz-option-btn" data-score="amber">
+            <h5>An Antique Library by Candlelight</h5>
+            <p>Rich leather, aged mahogany, and warm glowing ember light.</p>
+          </button>
+          <button class="quiz-option-btn" data-score="iris">
+            <h5>A Crisp Morning in a Florentine Garden</h5>
+            <p>Fresh dew, buttery petals, clean linen, and soft sunlight.</p>
+          </button>
+          <button class="quiz-option-btn" data-score="plum">
+            <h5>A Velvet-Lined Evening Salon in Paris</h5>
+            <p>Sensual darkness, spiced cocktails, and alluring mystery.</p>
+          </button>
+          <button class="quiz-option-btn" data-score="discovery">
+            <h5>An Ever-Changing Artistic Journey</h5>
+            <p>I wish to vary my presence depending on daily inspiration and weather.</p>
+          </button>
+        </div>
+      </div>
+
+      <!-- Quiz Step 2 -->
+      <div class="quiz-step" id="quiz-step-2">
+        <p style="color: var(--text-cream);">Question 2 of 3: Which tactile sensation resonates with your wardrobe choice?</p>
+        <div class="quiz-options">
+          <button class="quiz-option-btn" data-score="amber">
+            <h5>Heavy Cashmere &amp; Spiced Silk</h5>
+            <p>Enveloping, warm, comforting, and deeply textured.</p>
+          </button>
+          <button class="quiz-option-btn" data-score="iris">
+            <h5>Crisp White Organza &amp; Velvet Orris</h5>
+            <p>Structured, powdery, luminous, and refined.</p>
+          </button>
+          <button class="quiz-option-btn" data-score="plum">
+            <h5>Dark Brocade &amp; Smoked Leather</h5>
+            <p>Bold, intimate, magnetic, and confident.</p>
+          </button>
+          <button class="quiz-option-btn" data-score="discovery">
+            <h5>A Complete Tailored Collection</h5>
+            <p>I appreciate shifting textures across morning, noon, and midnight.</p>
+          </button>
+        </div>
+      </div>
+
+      <!-- Quiz Step 3 -->
+      <div class="quiz-step" id="quiz-step-3">
+        <p style="color: var(--text-cream);">Question 3 of 3: What is your preferred olfactory longevity and projection?</p>
+        <div class="quiz-options">
+          <button class="quiz-option-btn" data-score="amber">
+            <h5>Deep, Intimate Skin-Scent (24+ Hrs)</h5>
+            <p>Extrait concentration that stays close and unforgettable.</p>
+          </button>
+          <button class="quiz-option-btn" data-score="iris">
+            <h5>Luminous &amp; Airy Trail (12–16 Hrs)</h5>
+            <p>Eau de Parfum that leaves an elegant wake without overwhelming.</p>
+          </button>
+          <button class="quiz-option-btn" data-score="plum">
+            <h5>Sensual Evening Projection</h5>
+            <p>Dramatic top notes settling into warm bourbon vanilla and spices.</p>
+          </button>
+          <button class="quiz-option-btn" data-score="discovery">
+            <h5>Exploratory &amp; Layerable</h5>
+            <p>I prefer testing small doses to find how notes evolve on my pulse points.</p>
+          </button>
+        </div>
+      </div>
+
+      <!-- Quiz Result -->
+      <div class="quiz-step" id="quiz-step-result">
+        <div style="text-align: center; padding: 2rem 0;">
+          <div class="section-tag">Your Recommended Creation</div>
+          <h3 id="quiz-result-title" class="font-serif" style="font-size: 2.6rem; color: var(--text-ivory); margin: 1rem 0;">No. 01 — L'Ombre d'Or</h3>
+          <p id="quiz-result-desc" style="color: var(--text-cream); max-width: 580px; margin: 0 auto 2.5rem; line-height: 1.7;">
+            Based on your appreciation for warmth, depth, and atmospheric intimacy, our master composer recommends L'Ombre d'Or Extrait de Parfum.
+          </p>
+          
+          <div style="display: flex; gap: 1.5rem; justify-content: center;">
+            <a href="#collections" class="btn btn-primary" id="quiz-goto-card">View in Collection</a>
+            <button class="btn btn-secondary" id="quiz-restart">Retake Consultation</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= NOTIFICATION TOAST ================= -->
+  <div id="toast" style="position: fixed; bottom: 30px; right: 30px; background: var(--bg-surface); border: 1px solid var(--gold-metallic); color: var(--text-ivory); padding: 16px 28px; border-radius: var(--radius-md); box-shadow: var(--shadow-gold); z-index: 3000; display: flex; align-items: center; gap: 12px; transform: translateY(120px); transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);">
+    <span style="color: var(--gold-metallic); font-size: 1.2rem;">&check;</span>
+    <span id="toast-text" style="font-size: 0.9rem;">Item added to your Atelier Bag.</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

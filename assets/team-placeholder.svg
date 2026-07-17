@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3e5ab" />
+      <stop offset="50%" stop-color="#d4af37" />
+      <stop offset="100%" stop-color="#a8821a" />
+    </linearGradient>
+    <radialGradient id="light" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="rgba(212, 175, 55, 0.25)" />
+      <stop offset="100%" stop-color="rgba(8, 8, 10, 0.95)" />
+    </radialGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#light)" />
+  
+  <!-- Chiaroscuro Artistic Silhouette -->
+  <circle cx="200" cy="140" r="55" fill="#18161f" stroke="url(#gold)" stroke-width="1.5" />
+  <path d="M 100 360 C 100 250 150 210 200 210 C 250 210 300 250 300 360 Z" fill="#18161f" stroke="url(#gold)" stroke-width="1.5" />
+  
+  <!-- Subtle Lighting Rim -->
+  <path d="M 148 120 Q 200 80 252 120" fill="none" stroke="url(#gold)" stroke-width="2" opacity="0.6" />
+  <path d="M 130 260 Q 200 230 270 260" fill="none" stroke="url(#gold)" stroke-width="1.5" opacity="0.4" />
+</svg>

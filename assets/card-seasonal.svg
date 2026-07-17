@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3e5ab" />
+      <stop offset="50%" stop-color="#d4af37" />
+      <stop offset="100%" stop-color="#a8821a" />
+    </linearGradient>
+    <radialGradient id="santal-bg" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="rgba(200, 122, 40, 0.32)" />
+      <stop offset="65%" stop-color="#141112" />
+      <stop offset="100%" stop-color="#08080a" />
+    </radialGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#santal-bg)" />
+  
+  <!-- Heavy Octagonal Sandalwood & Beeswax Flacon (Ambre Santal) -->
+  <g transform="translate(150, 90)">
+    <!-- Octagonal Bottle Body -->
+    <polygon points="60,130 240,130 290,200 290,430 240,500 60,500 10,430 10,200" fill="#181310" stroke="url(#gold)" stroke-width="2.5" />
+    <polygon points="70,145 230,145 270,210 270,420 230,485 70,485 30,420 30,210" fill="rgba(200, 122, 40, 0.15)" stroke="url(#gold)" stroke-width="1" opacity="0.7" />
+    
+    <!-- Heavy Gold Metallic Cap -->
+    <rect x="100" y="85" width="100" height="45" fill="url(#gold)" rx="4" />
+    <rect x="85" y="15" width="130" height="70" fill="#181310" stroke="url(#gold)" stroke-width="3" rx="6" />
+    <circle cx="150" cy="50" r="14" fill="url(#gold)" />
+    
+    <!-- Octagonal Gold Label -->
+    <polygon points="90,260 210,260 230,290 230,370 210,400 90,400 70,370 70,290" fill="#0d0a08" stroke="url(#gold)" stroke-width="1.8" />
+    <text x="150" y="310" font-family="'Cinzel', serif" font-size="15" fill="#d4af37" text-anchor="middle" letter-spacing="4">NO. 04</text>
+    <line x1="100" y1="325" x2="200" y2="325" stroke="#d4af37" stroke-width="0.8" />
+    <text x="150" y="355" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="22" fill="#f9f8f5" text-anchor="middle">Ambre Santal</text>
+  </g>
+  
+  <!-- Glowing Golden Beeswax Drops & Sandalwood Rings -->
+  <circle cx="80" cy="200" r="30" fill="none" stroke="url(#gold)" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.6" />
+  <circle cx="510" cy="400" r="45" fill="none" stroke="url(#gold)" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.6" />
+  <circle cx="490" cy="180" r="8" fill="#f3e5ab" opacity="0.9" />
+</svg>

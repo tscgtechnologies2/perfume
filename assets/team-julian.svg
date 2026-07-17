@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gold-rim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3e5ab" />
+      <stop offset="50%" stop-color="#d4af37" />
+      <stop offset="100%" stop-color="#a8821a" />
+    </linearGradient>
+    <radialGradient id="botanical-glow" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="rgba(200, 122, 40, 0.28)" />
+      <stop offset="65%" stop-color="rgba(18, 17, 22, 0.95)" />
+      <stop offset="100%" stop-color="#08080a" />
+    </radialGradient>
+  </defs>
+  <rect width="400" height="480" fill="url(#botanical-glow)" />
+  
+  <!-- Rare Botanical Leaves Silhouette in Background -->
+  <g stroke="rgba(212, 175, 55, 0.2)" stroke-width="1.5" fill="none">
+    <path d="M 50 180 C 80 120 140 100 160 150 C 140 190 80 210 50 180 Z" />
+    <path d="M 340 160 C 310 110 260 110 250 150 C 270 190 320 200 340 160 Z" />
+    <path d="M 310 320 C 360 290 380 340 350 380 C 310 370 300 340 310 320 Z" />
+  </g>
+
+  <!-- Botanical Specialist Male Portrait Silhouette -->
+  <path d="M 85 480 L 85 385 C 85 345 110 325 145 318 L 160 312 L 165 265 C 145 245 138 215 138 175 C 138 115 168 80 212 80 C 256 80 286 115 286 175 C 286 215 278 245 258 265 L 262 312 L 278 318 C 312 325 338 345 338 385 L 338 480 Z" fill="#131217" stroke="url(#gold-rim)" stroke-width="1.8" />
+  
+  <!-- Classic Architectural Eyeglasses Frame Silhouette -->
+  <rect x="175" y="155" width="34" height="24" rx="4" fill="none" stroke="#d4af37" stroke-width="2" opacity="0.85" />
+  <rect x="219" y="155" width="34" height="24" rx="4" fill="none" stroke="#d4af37" stroke-width="2" opacity="0.85" />
+  <line x1="209" y1="165" x2="219" y2="165" stroke="#d4af37" stroke-width="2" />
+  <line x1="162" y1="163" x2="175" y2="163" stroke="#d4af37" stroke-width="2" />
+  
+  <!-- Collar & Coat Detail -->
+  <path d="M 160 312 L 195 380 L 195 480" fill="none" stroke="url(#gold-rim)" stroke-width="1.2" opacity="0.6" />
+  <path d="M 262 312 L 228 380 L 228 480" fill="none" stroke="url(#gold-rim)" stroke-width="1.2" opacity="0.6" />
+</svg>

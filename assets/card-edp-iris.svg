@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3e5ab" />
+      <stop offset="50%" stop-color="#d4af37" />
+      <stop offset="100%" stop-color="#a8821a" />
+    </linearGradient>
+    <radialGradient id="iris-bg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="rgba(232, 197, 190, 0.22)" />
+      <stop offset="65%" stop-color="#121318" />
+      <stop offset="100%" stop-color="#08080a" />
+    </radialGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#iris-bg)" />
+  
+  <!-- Slender Luminous Cylindrical Flacon (Iris Céleste) -->
+  <g transform="translate(180, 80)">
+    <rect x="40" y="140" width="160" height="340" rx="80" fill="rgba(255,255,255,0.06)" stroke="url(#gold)" stroke-width="2" />
+    <!-- Inner Liquid Core -->
+    <rect x="55" y="180" width="130" height="280" rx="65" fill="rgba(232, 197, 190, 0.15)" />
+    
+    <!-- Gold Collar & Cap -->
+    <rect x="90" y="100" width="60" height="40" fill="url(#gold)" rx="4" />
+    <circle cx="120" cy="55" r="45" fill="#111116" stroke="url(#gold)" stroke-width="2.5" />
+    <circle cx="120" cy="55" r="20" fill="url(#gold)" opacity="0.3" />
+    
+    <!-- Oval Label Plate -->
+    <ellipse cx="120" cy="300" rx="65" ry="50" fill="#0b0a0e" stroke="url(#gold)" stroke-width="1.5" />
+    <text x="120" y="290" font-family="'Cinzel', serif" font-size="14" fill="#d4af37" text-anchor="middle" letter-spacing="3">NO. 03</text>
+    <text x="120" y="320" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="20" fill="#f9f8f5" text-anchor="middle">Iris Céleste</text>
+  </g>
+  
+  <!-- Floating Orris & Violet Leaf Line Art -->
+  <path d="M 80 200 C 120 160 160 220 100 260 Z" fill="none" stroke="url(#gold)" stroke-width="1.2" opacity="0.6" />
+  <path d="M 460 360 C 500 320 540 380 480 420 Z" fill="none" stroke="url(#gold)" stroke-width="1.2" opacity="0.6" />
+  <circle cx="480" cy="180" r="5" fill="#f3e5ab" opacity="0.8" />
+  <circle cx="120" cy="450" r="6" fill="#f3e5ab" opacity="0.7" />
+</svg>

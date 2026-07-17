@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3e5ab" />
+      <stop offset="50%" stop-color="#d4af37" />
+      <stop offset="100%" stop-color="#a8821a" />
+    </linearGradient>
+    <radialGradient id="bg" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="rgba(94, 48, 70, 0.4)" />
+      <stop offset="70%" stop-color="#111016" />
+      <stop offset="100%" stop-color="#08080a" />
+    </radialGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)" />
+  
+  <!-- Sleek Geometric Velvet Flacon (Noir Velours) -->
+  <g transform="translate(160, 100)">
+    <rect x="20" y="120" width="240" height="320" rx="8" fill="#18141c" stroke="url(#gold)" stroke-width="2.5" />
+    <!-- Velvet Texture Pattern Lines -->
+    <path d="M 40 140 L 40 420 M 60 140 L 60 420 M 220 140 L 220 420 M 240 140 L 240 420" stroke="rgba(212, 175, 55, 0.15)" stroke-width="1" />
+    
+    <!-- Gold Collar & Cap -->
+    <rect x="100" y="80" width="80" height="40" fill="url(#gold)" rx="2" />
+    <rect x="90" y="10" width="100" height="70" fill="#0d0c11" stroke="url(#gold)" stroke-width="3" rx="4" />
+    <circle cx="140" cy="45" r="10" fill="url(#gold)" />
+    
+    <!-- Gold Monogram Label Plate -->
+    <rect x="60" y="220" width="160" height="110" fill="#08080a" stroke="url(#gold)" stroke-width="1.8" rx="3" />
+    <text x="140" y="260" font-family="'Cinzel', serif" font-size="15" fill="#d4af37" text-anchor="middle" letter-spacing="4">NO. 02</text>
+    <line x1="90" y1="275" x2="190" y2="275" stroke="#d4af37" stroke-width="0.8" />
+    <text x="140" y="302" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="22" fill="#f9f8f5" text-anchor="middle">Noir Velours</text>
+  </g>
+  
+  <!-- Floating Plum Petals & Gold Shards -->
+  <circle cx="100" cy="450" r="28" fill="rgba(94, 48, 70, 0.6)" stroke="url(#gold)" stroke-width="1" />
+  <circle cx="480" cy="200" r="36" fill="rgba(94, 48, 70, 0.5)" stroke="url(#gold)" stroke-width="1" />
+  <circle cx="500" cy="420" r="8" fill="#f3e5ab" opacity="0.8" />
+</svg>
